@@ -109,3 +109,16 @@ blockquote a:hover {
   color: #666;
   margin-top: 1rem;
 }
+
+#tips {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.tips-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+.tips-list li {
+  margin-bottom: 1rem;
+}
