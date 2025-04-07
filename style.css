@@ -84,3 +84,9 @@ blockquote a {
 blockquote a:hover {
   text-decoration: underline;
 }
+
+.citation {
+  color: #555;
+  font-size: 0.9rem;
+  font-style: italic;
+}
