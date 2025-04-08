@@ -105,3 +105,24 @@ footer {
   margin-top: -1rem;
   margin-bottom: 1rem;
 }
+
+.chart-img {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.citation {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+.citation a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+.citation a:hover {
+  text-decoration: underline;
+}
