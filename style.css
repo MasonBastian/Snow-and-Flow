@@ -126,3 +126,12 @@ footer {
 .citation a:hover {
   text-decoration: underline;
 }
+
+#personal-story {
+  padding: 2rem 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+#personal-story p {
+  margin-bottom: 1.2rem;
+}
