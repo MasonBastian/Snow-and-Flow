@@ -11,7 +11,7 @@
     <div class="hero-overlay">
       <h1>Snow & Flow</h1>
       <p>Riding through snowboarding history, facts, culture, and tips to help educate new snowboarders</p>
-    </div>
+    
     <nav>
       <ul>
         <li><a href="#mission">Mission</a></li>
@@ -29,13 +29,13 @@
   <main>
 <section id="problem">
   <h2>The Problem</h2>
-  <div class="collapsible">
-    <button class="collapse-toggle" onclick="toggleCollapse('problemContent', this)">Read More</button>
-    <div class="collapse-content" id="problemContent">
+  
+    
+    
       <p>The number of snowboarders has declined almost 28 percent since its peak in 2010. According to the National Ski Areas Association.</p>
       <p>In the article, <em>"Coping with Recession in the Ski-Industry: A Suppliers' and Consumers' Perspective,"</em> authors Taks, Marijke, and Jona Ragoen present how the economic cycle affects the ski industry on both the supplier and consumer sides. When the economy is in downturn or recession, interviews with suppliers in two ski resorts and ski travel agencies, as well as surveys of Flemish ski tourists, show that ski tourism also experiences a decline. The authors find that the recession's impac...
-    </div>
-  </div>
+    
+  
 </section>
 
 <script>
@@ -78,9 +78,9 @@ window.onload = () => {
     
 <section id="tips">
   <h2>Tips for Beginners</h2>
-  <div class="collapsible">
-    <button class="collapse-toggle" onclick="toggleCollapse('tipsContent', this)">Read More</button>
-    <div class="collapse-content" id="tipsContent">
+  
+    
+    
       <ul class="tips-list">
         <li><strong>Take a lesson.</strong> Starting with a certified instructor can save you from developing bad habits early on.</li>
         <li><strong>Learn how to fall.</strong> Try to fall on your forearms or butt — not your wrists!</li>
@@ -90,7 +90,7 @@ window.onload = () => {
         <li><strong>Be patient with yourself.</strong> Snowboarding takes time — but it’s worth it!</li>
       </ul>
     
-    </div>
+    
   </div>
 </section>
 
@@ -108,9 +108,9 @@ window.onload = () => {
     
 <section id="fun-facts">
   <h2>10 Fun Facts About Snowboarding</h2>
-  <div class="collapsible">
-    <button class="collapse-toggle" onclick="toggleCollapse('fun-factsContent', this)">Read More</button>
-    <div class="collapse-content" id="fun-factsContent">
+  
+    
+    
       <ol>
         <li><strong>The first snowboard was a toy.</strong><br>In 1965, Sherman Poppen built the “Snurfer” by bolting two skis together for his daughter. That DIY vibe still lives on today.</li>
         <li><strong>Snowboarding was once banned.</strong><br>In the ‘80s, ski resorts thought snowboarders were too wild — many banned them outright. Rebels, obviously.</li>
@@ -157,9 +157,9 @@ window.onload = () => {
     
 <section id="personal-story">
   <h2>My Personal Story</h2>
-  <div class="collapsible">
-    <button class="collapse-toggle" onclick="toggleCollapse('personal-storyContent', this)">Read More</button>
-    <div class="collapse-content" id="personal-storyContent">
+  
+    
+    
       <p>I still can remember strapping into a snowboard for the first time. I was 13, standing on the top of a small hill at a local ski resort, wrapped in a jacket two sizes too large and a pair of big boots that made me walk funny. It felt strange beneath my feet — slick, unpredictable, wild. But as I fell for the first time — and then the second, and the third — something unexpected happened. I laughed, and I laughed hard. It was a laugh that comes only from being humbled by something you thought would come naturally.</p>
   <p>That hill was nothing compared to where snowboarding would take me.</p>
   <p>For years, I continued to snowboard in powder. Snowboarding turned from a pastime into a ritual, a reset button, a way to be fully present. I began to glimpse why this sport is so special to me. It’s not only the thrill of blasting down the slope — it’s the community, the hush of snowfall, the liberation of each run.</p>
@@ -177,20 +177,6 @@ window.onload = () => {
   <footer>
     <p>© 2025 Snow & Flow. Shred responsibly.</p>
   </footer>
-<script>
-function toggleCollapse(id, btn) {
-  const content = document.getElementById(id);
-  if (content.style.display === 'none' || !content.style.display) {
-    content.style.display = 'block';
-    btn.textContent = 'Read Less';
-  } else {
-    content.style.display = 'none';
-    btn.textContent = 'Read More';
-  }
-}
-window.onload = () => {
-  document.querySelectorAll('.collapse-content').forEach(el => el.style.display = 'none');
-};
-</script>
+
 </body>
 </html>

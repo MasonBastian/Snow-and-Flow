@@ -134,23 +134,3 @@ blockquote .citation {
 #deals a:hover {
   text-decoration: underline;
 }
-
-.collapsible {
-  margin-top: 1rem;
-}
-.collapse-toggle {
-  background-color: teal;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  margin-bottom: 1rem;
-}
-.collapse-toggle:hover {
-  background-color: #007d7d;
-}
-.collapse-content {
-  display: none;
-}
