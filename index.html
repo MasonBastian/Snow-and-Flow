@@ -29,12 +29,34 @@
   <main>
 <section id="problem">
   <h2>The Problem</h2>
-  <p>The number of snowboarders has declined almost 28 percent since its peak in 2010. According to the National Ski Areas Association.</p>
-  <p>In the article, <em>"Coping with Recession in the Ski-Industry: A Suppliers' and Consumers' Perspective,"</em> authors Taks, Marijke, and Jona Ragoen present how the economic cycle affects the ski industry on both the supplier and consumer sides.</p>
-  <p>When the economy is in downturn or recession, interviews with suppliers in two ski resorts and ski travel agencies, as well as surveys of Flemish ski tourists, show that ski tourism also experiences a decline. The authors find that the recession's impact varies among different groups.</p>
-  <p>Households without children, individuals facing money constraints, and people with lower occupational status are all more susceptible to economic hardship. The research also offers a contribution to theories concerning the socioeconomics of ski tourism and provides the supplier with development strategies for companies in times of recession.</p>
-  <p>This article is of practical interest in understanding how economic factors affect participation rates in snow sports, including snowboarding.</p>
+  <div class="collapsible">
+    <button class="collapse-toggle" onclick="toggleCollapse()">Read More</button>
+    <div class="collapse-content" id="problemContent">
+      <p>The number of snowboarders has declined almost 28 percent since its peak in 2010. According to the National Ski Areas Association.</p>
+      <p>In the article, <em>"Coping with Recession in the Ski-Industry: A Suppliers' and Consumers' Perspective,"</em> authors Taks, Marijke, and Jona Ragoen present how the economic cycle affects the ski industry on both the supplier and consumer sides.</p>
+      <p>When the economy is in downturn or recession, interviews with suppliers in two ski resorts and ski travel agencies, as well as surveys of Flemish ski tourists, show that ski tourism also experiences a decline. The authors find that the recession's impact varies among different groups.</p>
+      <p>Households without children, individuals facing money constraints, and people with lower occupational status are all more susceptible to economic hardship. The research also offers a contribution to theories concerning the socioeconomics of ski tourism and provides the supplier with development strategies for companies in times of recession.</p>
+      <p>This article is of practical interest in understanding how economic factors affect participation rates in snow sports, including snowboarding.</p>
+    </div>
+  </div>
 </section>
+
+<script>
+function toggleCollapse() {
+  const content = document.getElementById('problemContent');
+  const btn = document.querySelector('.collapse-toggle');
+  if (content.style.display === 'none' || !content.style.display) {
+    content.style.display = 'block';
+    btn.textContent = 'Read Less';
+  } else {
+    content.style.display = 'none';
+    btn.textContent = 'Read More';
+  }
+}
+window.onload = () => {
+  document.getElementById('problemContent').style.display = 'none';
+};
+</script>
 
 <section id="mission">
   <h2>Our Mission</h2>
@@ -56,8 +78,12 @@
   </ul>
 </section>
 
-    <section id="tips">
-      <h2>Tips for Beginners</h2>
+    
+<section id="tips">
+  <h2>Tips for Beginners</h2>
+  <div class="collapsible">
+    <button class="collapse-toggle" onclick="toggleCollapse('tipsContent', this)">Read More</button>
+    <div class="collapse-content" id="tipsContent">
       <ul class="tips-list">
         <li><strong>Take a lesson.</strong> Starting with a certified instructor can save you from developing bad habits early on.</li>
         <li><strong>Learn how to fall.</strong> Try to fall on your forearms or butt — not your wrists!</li>
@@ -66,7 +92,11 @@
         <li><strong>Look where you want to go.</strong> Your body follows your eyes — don’t stare at the ground or trees.</li>
         <li><strong>Be patient with yourself.</strong> Snowboarding takes time — but it’s worth it!</li>
       </ul>
-    </section>
+    
+    </div>
+  </div>
+</section>
+
 
     <section id="history">
       <h2>The Origins of Snowboarding</h2>
@@ -78,8 +108,12 @@
       <p>Today, from backcountry runs to halfpipe contests, snowboarding is more than a sport — it’s a lifestyle.</p>
     </section>
 
-    <section id="fun-facts">
-      <h2>10 Fun Facts About Snowboarding</h2>
+    
+<section id="fun-facts">
+  <h2>10 Fun Facts About Snowboarding</h2>
+  <div class="collapsible">
+    <button class="collapse-toggle" onclick="toggleCollapse('fun-factsContent', this)">Read More</button>
+    <div class="collapse-content" id="fun-factsContent">
       <ol>
         <li><strong>The first snowboard was a toy.</strong><br>In 1965, Sherman Poppen built the “Snurfer” by bolting two skis together for his daughter. That DIY vibe still lives on today.</li>
         <li><strong>Snowboarding was once banned.</strong><br>In the ‘80s, ski resorts thought snowboarders were too wild — many banned them outright. Rebels, obviously.</li>
@@ -92,7 +126,11 @@
         <li><strong>Terrain parks changed everything.</strong><br>Jumps, rails, halfpipes — terrain parks turned the mountain into a playground.</li>
         <li><strong>Snowboarding is more than sport — it’s style.</strong><br>From baggy gear to board graphics, self-expression is part of the ride.</li>
       </ol>
-    </section>
+    
+    </div>
+  </div>
+</section>
+
 
     <section id="quotes">
       <h2>Words from the Mountain</h2>
@@ -119,20 +157,43 @@
       <p class="gallery-note">More Coming Soon...</p>
     </section>
 
-    <section id="personal-story">
+    
+<section id="personal-story">
   <h2>My Personal Story</h2>
-  <p>I still can remember strapping into a snowboard for the first time. I was 13, standing on the top of a small hill at a local ski resort, wrapped in a jacket two sizes too large and a pair of big boots that made me walk funny. It felt strange beneath my feet — slick, unpredictable, wild. But as I fell for the first time — and then the second, and the third — something unexpected happened. I laughed, and I laughed hard. It was a laugh that comes only from being humbled by something you thought would come naturally.</p>
+  <div class="collapsible">
+    <button class="collapse-toggle" onclick="toggleCollapse('personal-storyContent', this)">Read More</button>
+    <div class="collapse-content" id="personal-storyContent">
+      <p>I still can remember strapping into a snowboard for the first time. I was 13, standing on the top of a small hill at a local ski resort, wrapped in a jacket two sizes too large and a pair of big boots that made me walk funny. It felt strange beneath my feet — slick, unpredictable, wild. But as I fell for the first time — and then the second, and the third — something unexpected happened. I laughed, and I laughed hard. It was a laugh that comes only from being humbled by something you thought would come naturally.</p>
   <p>That hill was nothing compared to where snowboarding would take me.</p>
   <p>For years, I continued to snowboard in powder. Snowboarding turned from a pastime into a ritual, a reset button, a way to be fully present. I began to glimpse why this sport is so special to me. It’s not only the thrill of blasting down the slope — it’s the community, the hush of snowfall, the liberation of each run.</p>
   <p>But I have also seen how the sport has changed.</p>
   <p>Snowboarder visits in the United States declined by 28 percent, from about 8.2 million in 2010 to 5.9 million in 2016, according to the National Ski Areas Association. That stat hit me hard. I began to see fewer riders in lift lines, fewer people in terrain parks. Snowboarding is now slowly dropping out of fashion. And that’s tough to watch.</p>
   <p>The experts have their theories — perhaps it’s the cost, the competition from the resurgence of skiing, or how social media has changed perceptions of what’s “cool.” In The New York Times, Billy Witz noted that snowboarding “has lost some of its luster,” and it’s difficult to disagree. But I also believe we’ve simply forgotten how to share the soul of it.</p>
   <p>And that’s why I started Snow & Flow — a home for sharing the stories, the highs and wipeouts, the history and heart of snowboarding. Because the numbers may be down but the sensation of dropping into untracked snow, will never go out of style.</p>
+
+    </div>
+  </div>
 </section>
+
   </main>
 
   <footer>
     <p>© 2025 Snow & Flow. Shred responsibly.</p>
   </footer>
+<script>
+function toggleCollapse(id, btn) {
+  const content = document.getElementById(id);
+  if (content.style.display === 'none' || !content.style.display) {
+    content.style.display = 'block';
+    btn.textContent = 'Read Less';
+  } else {
+    content.style.display = 'none';
+    btn.textContent = 'Read More';
+  }
+}
+window.onload = () => {
+  document.querySelectorAll('.collapse-content').forEach(el => el.style.display = 'none');
+};
+</script>
 </body>
 </html>
