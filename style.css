@@ -1,17 +1,33 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background: #f9fbfd;
+  color: #111;
+  line-height: 1.6;
   padding: 2rem;
-  margin: 0;
 }
 h2 {
+  font-size: 2rem;
   color: teal;
-  margin-top: 2rem;
   border-left: 6px solid teal;
   padding-left: 0.75rem;
+  margin-top: 2rem;
 }
-p {
-  line-height: 1.6;
+ul.tips-list {
+  padding-left: 1.5rem;
+}
+blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+blockquote .citation {
+  font-style: normal;
+  color: #555;
+  font-size: 0.9rem;
 }
 .gallery {
   display: grid;
